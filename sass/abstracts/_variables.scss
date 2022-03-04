@@ -1,0 +1,35 @@
+// COLORS
+$color-primary: #38aecc; // original shade
+$color-primary-light: #89cfe1;
+$color-primary-dark: #278299;
+
+$color-secondary-light: #f9af73;
+$color-secondary-dark: #da670a; // original shade
+
+$color-tertiary-light: #00f0c7;
+$color-tertiary-dark: #00bd9d; // original shade
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #333;
+$color-grey-dark-3: #ccc;
+
+$color-white: #fff;
+$color-black: #000;
+
+// FONT
+$default-font-size: 1.8rem;
+
+// GRID variables
+
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 75 * 16px = 1200px;
+$bp-large: 62.5em; // 62.5 * 16px = 1000px;
+$bp-medium: 50em; // 50 * 16px = 800px;
+$bp-small: 37.5em; // 37.5em * 16px = 600px;

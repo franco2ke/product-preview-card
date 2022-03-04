@@ -1,0 +1,21 @@
+// all partials imported in the order they are listed
+
+@charset "UTF-8";
+
+//@import 'vendors/normalize'; <- example
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/index";

@@ -1,0 +1,59 @@
+<!-- The doctype tells browser what document type to expect. In this case 'html' ==> html5 -->
+<!DOCTYPE html>
+
+<!-- The lang attribute is used to identify the language of text content on the page. This information helps search engines return language specific results. Also used by screen readers that switch language profiles to provide the correct accent and pronounciation 'en'=> english, 'en-gb'=> British English -->
+
+<html lang="en">
+  <head>
+    <!-- <meta> is a html tag that contains metadata about the page, e.g tell search engine what type of content a web page contains -->
+    <!-- The charset attribute specifies the character encoding for the document, that browser will use to translate machine code into human readable text e.g 'utf-8' -->
+    <!-- 'utf-8' addresses ASCII's shortcomings and can translate almost every language in the world, as it includes their characters -->
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- meta description used as search snippet for website in search engine - upto 155 characters -->
+    <meta name="description" content="put description that appears on search engine results here" />
+    <!-- viewport meta sets page width to device width (disable horizontal scroll) and sets initial zoom level -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- theme-color indicates a suggested color that user agents should use to customize the display of the pager or the surrounding user interface -->
+    <meta name="theme-color" content="#fafafa" />
+
+    <!-- open graph (og) meta tags are snippets of code that improve how URLs are displayed when shared on social media -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <!-- Place favicon / url shortcut icon here ico (x-icon),png,svg supported -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png" />
+    <!-- for web page icon that can be saved on home screen (180x180) -->
+    <link rel="apple-touch-icon" href="img/apple-icon.png" />
+
+    <!-- Place font family and any icon frameworks here -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- Top level semantic elements <main>, <header>, <footer> -->
+    <main class="container"></main>
+
+    <!-- Main JavaScript file -->
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>
