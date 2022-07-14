@@ -2,7 +2,7 @@
 
 ![Desktop View](design/desktop-preview.jpg)
 
-This the [Product preview card component](design/desktop-preview.png). Thanks for checking it out
+This the [Product preview card component](design/desktop-preview.jpg). Thanks for checking it out
 
 ## Table of contents 🧳
 
