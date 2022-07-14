@@ -1,26 +1,15 @@
 // COLORS
-$color-primary: #38aecc; // original shade
-$color-primary-light: #89cfe1;
-$color-primary-dark: #278299;
+$color-primary: hsl(158, 36%, 37%); // Dark cyan
+$color-secondary: hsl(30, 38%, 92%);
 
-$color-secondary-light: #f9af73;
-$color-secondary-dark: #da670a; // original shade
-
-$color-tertiary-light: #00f0c7;
-$color-tertiary-dark: #00bd9d; // original shade
-
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-
-$color-grey-dark-1: #777;
-$color-grey-dark-2: #333;
-$color-grey-dark-3: #ccc;
+$color-tertiary-gray: hsl(228, 12%, 48%);
+$color-tertiary-dark: hsl(212, 21%, 14%); // Very Dark grayish blue
 
 $color-white: #fff;
 $color-black: #000;
 
 // FONT
-$default-font-size: 1.8rem;
+$default-font-size: 1.4rem;
 
 // GRID variables
 

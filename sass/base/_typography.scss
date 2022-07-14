@@ -30,9 +30,10 @@
 // 26. Make sure foot and inch marks are straight, not curly.
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: $default-font-size; //18px
   font-weight: 400;
-  line-height: 1.8;
-  color: $color-grey-dark-1;
+  line-height: 1.4;
+  color: $color-tertiary-gray;
 }

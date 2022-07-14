@@ -1,8 +1,8 @@
-# Francis Wafula - BLANK WEB PAGE TEMPLATE
+# Frontend Mentor - Product Preview Card Component 👋🏾
 
 ![Desktop View](design/desktop-preview.png)
 
-This the [BLANK WEB PAGE TEMPLATE](design/desktop-preview.png). Thanks for checking it out
+This the [Product preview card component](design/desktop-preview.png). Thanks for checking it out
 
 ## Table of contents 🧳
 
@@ -18,17 +18,14 @@ This the [BLANK WEB PAGE TEMPLATE](design/desktop-preview.png). Thanks for check
 
 ## Overview
 
-This is a blank web page template, that contains all the files necessary for initializing a professional web project.
+This is a product preview card component that is used in online shops to showcase products. Built mainly with flexbox.
 
 ### The objective
 
-If you intend to develop professional web applications or websites fast, this template can be useful for you. Use included files, documentation and content as initial files for other projects to quickly get moving. Key highlights are:
+Users are be able to:
 
-- A standard HTML template with all best practice tags and elements included
-- SASS development environment setup for easy css coding
-- Well organized folder and file setup
-- Included prettier configuration file with best practice considerations for prettier code formatter ensuring standardized code, especially good for teams.
-- Live development webserver included
+- View the optimal layout for the card depending on their device's screen size.
+- See an active state when they click on the 'Add to cart' button.
 
 ### Screenshot
 
@@ -37,52 +34,52 @@ If you intend to develop professional web applications or websites fast, this te
 ### Links
 
 - Solution URL: [https://github.com/franco2ke/single-price-grid-component](https://github.com/franco2ke/single-price-grid-component)
+- Live Site URL: [https://franco2ke.github.io/single-price-grid-component/](https://franco2ke.github.io/single-price-grid-component/)
 
 ## My process
 
-I started by creating the html file based on the popular [HTML5 Boiler plate](https://html5boilerplate.com/). I customized the html to only have the most neccessary tags, elements for my intended purposes. Tags relating to PWAs were removed as well. Folder organization was next, ensuring folders for each webpage aspect, images, css, js etc.
-A prettier code formatter exclusion was necessary to allow upto 120 characters per line for html code and overwrite the default 80. Just for html code.
-A live-server and sass compiler were included to quicken development time.
-To conclude the sass folder was implemented following the [7 - 1 Pattern by Kitty Giraudel](https://sass-guidelin.es/#the-7-1-pattern)
+I started by creating the layout container via CSS Grid. It was a little tougher than I thought centering the component without using absolute positioning. Next step was to create the desktop view afterwhich I scaled down and ensured it was looking good at all sizes between 1440px to 320px. Breakpoints used; 800px and 600px.
+
+Also added a small transition on the signup button to emphasize the hover state.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Desktop first workflow
 - [SASS](https://sass-guidelin.es) - Sassy Sass
 - [BEM](http://getbem.com/introduction/) - BEM methodology
-- node.js, npm, live-server, node-sass, npm-run-all
 
 ### What I learned
 
-When starting a web based project, there are other things to consider apart from just the html, css and js code. It is important to also look at:
-a. Search Engine Optimization
-b. Social Media presentation
-c. Site loading speed
-The html meta tags when properly filled provide a head start on the above, and the most important ones are included
+I started by examining the design images and listing the key visible html elements required for the component. Once I had this list of elements, I proceeded to assign class names via the BEM methodology.
 
-It's also a good idea to provided the site icons, and avoid having none or default wordpress, joomla and other CMS icons. This gives your site or app a more professional look. Necessary icon configurations for all browsers and iOS are included.
+My development approach was to have two parent containers, one for the image and another for the product info, both positioned via flexbox. The product info layout was also done via flex box using the 'column' flex-direction.
 
-Documenting the code and explaining the why, allows easier understanding of the code when you go through it 2 month's later.
+Effort was made to space elements using the 'gap' flex-box property, minimizing usage of margins where possible, with an aim of reducing work and also increasing the maintainability and resuability of the component.
 
-Starting and stopping of the live-server and sass compiler simplify the coding experience, improving coding productivity. The live-server automatically reloads page on every source file change.
+The breakpoint chosen was 600px/ 37.5em.
 
-- To start live web-server: % npm start
+Setting up the Art Direction; allowing the page to serve different images depending on screen width was something new for me.
+From this problem, I see the need to brush up on loading and sizing images via html or css and the pros/cons of the various approaches.
 
-The current .gitignore file is populated with the necessary exclusions; files that should remain private and annoying system files.
-
-The README makes a perfect starting point.
+```html
+<!-- Art Direction; Different images for different screen widths -->
+<picture class="product-card__img">
+  <source srcset="./img/image-product-mobile.jpg" media="(max-width: 37.5em)" />
+  <img src="./img/image-product-desktop.jpg" class="product-card__img" alt="" />
+</picture>
+```
 
 ### Useful resources
 
-- [Github Publishing](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) - This simple article helped me with the details of posting my solution online. I found it quite simple to post using github pages.
+- [Images in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML) - On the different options to load images.
 
 ## Author
 
 - Website - [https://www.paon.co.ke](https://www.paon.co.ke)
+- Frontend Mentor - [@franco2ke](https://www.frontendmentor.io/profile/franco2ke)
 - Twitter - [@franco2ke](https://twitter.com/franco2ke)
 
 Happy Coding 🎯

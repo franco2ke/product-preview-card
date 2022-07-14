@@ -9,7 +9,7 @@
     <!-- The charset attribute specifies the character encoding for the document, that browser will use to translate machine code into human readable text e.g 'utf-8' -->
     <!-- 'utf-8' addresses ASCII's shortcomings and can translate almost every language in the world, as it includes their characters -->
     <meta charset="utf-8" />
-    <title></title>
+    <title>Frontend Mentor | Product preview card component</title>
     <!-- meta description used as search snippet for website in search engine - upto 155 characters -->
     <meta name="description" content="put description that appears on search engine results here" />
     <!-- viewport meta sets page width to device width (disable horizontal scroll) and sets initial zoom level -->
@@ -25,35 +25,70 @@
 
     <!-- Place favicon / url shortcut icon here ico (x-icon),png,svg supported -->
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png" />
+    <!-- <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png" /> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
     <!-- for web page icon that can be saved on home screen (180x180) -->
     <link rel="apple-touch-icon" href="img/apple-icon.png" />
 
     <!-- Place font family and any icon frameworks here -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet" /> -->
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
   </head>
 
   <body>
     <!-- Top level semantic elements <main>, <header>, <footer> -->
-    <main class="container"></main>
+    <main class="container">
+      <article class="product-card">
+        <div class="product-card__img-box">
+          <!-- Art Direction; Different images for different screen widths -->
+          <picture class="product-card__img">
+            <source srcset="./img/image-product-mobile.jpg" media="(max-width: 37.5em)" />
+            <img src="./img/image-product-desktop.jpg" class="product-card__img" alt="" />
+          </picture>
+          <!-- <img src="./img/image-product-desktop.jpg" class="product-card__img" alt="" /> -->
+        </div>
+        <div class="product-card__info">
+          <span class="product-card__category">Perfume</span>
+          <h1 class="product-card__title">Gabrielle Essence Eau De Parfum</h1>
+          <p class="product-card__excerpt">
+            A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
+            CHANEL.
+          </p>
+          <div class="product-card__pricing">
+            <span class="product-card__pricing--discounted">$149.99</span>
+            <span class="product-card__pricing--original">$169.99</span>
+          </div>
+          <a href="#" class="product-card__button">
+            <img class="product-card__button-icon" src="./img/icon-cart.svg" />Add to Cart</a
+          >
+        </div>
+      </article>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="#">Francis Wafula</a>.
+      </div>
+    </main>
 
     <!-- Main JavaScript file -->
     <script src="js/main.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
 </html>

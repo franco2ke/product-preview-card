@@ -4,7 +4,8 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 /* 
 * 1. Set the rem (root em) unit for relative sizing
@@ -16,22 +17,22 @@
 * 3. Prevent adjustments of font size after orientation changes in iOS.
 */
 html {
-  font-size: 62.5%;
-  /* 1 */
-  line-height: 1.15;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 3 */ }
+  font-size: 62.5%; /* 1 */
+  line-height: 1.15; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
 
 body {
   box-sizing: border-box;
-  background-color: #f7f7f7; }
+  background-color: hsl(30deg, 38%, 92%);
+}
 
 /*
   * Allow only vertical resizing of textareas.
   */
 textarea {
-  resize: vertical; }
+  resize: vertical;
+}
 
 /* Forms **************************************/
 /**
@@ -43,18 +44,117 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */ }
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
 
 body {
-  font-family: "Lato", sans-serif;
-  font-size: 1.8rem;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.8;
-  color: #777; }
+  line-height: 1.4;
+  color: hsl(228deg, 12%, 48%);
+}
+
+.product-card {
+  max-width: 600px;
+  margin: 175px auto;
+  display: flex;
+  border-radius: 7px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 37.5em) {
+  .product-card {
+    flex-direction: column;
+    margin: 40px 20px;
+  }
+}
+.product-card__img-box {
+  flex: 0 1 300px;
+}
+@media only screen and (max-width: 37.5em) {
+  .product-card__img-box {
+    flex: 0 1;
+  }
+}
+.product-card__img {
+  display: block;
+  width: 300px;
+  height: auto;
+}
+@media only screen and (max-width: 37.5em) {
+  .product-card__img {
+    width: 100%;
+  }
+}
+.product-card__info {
+  flex: 0 1 300px;
+  background-color: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 37.5em) {
+  .product-card__info {
+    flex: 0 1;
+    gap: 15px;
+  }
+}
+.product-card__category {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.product-card__title {
+  font-family: "Fraunces", serif;
+  color: #000;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+@media only screen and (max-width: 37.5em) {
+  .product-card__title {
+    margin-top: -0.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .product-card__excerpt {
+    margin-bottom: 1.5rem;
+  }
+}
+.product-card__pricing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.product-card__pricing--original {
+  padding-left: 2.5rem;
+  text-decoration: line-through;
+}
+.product-card__pricing--discounted {
+  font-family: "Fraunces", serif;
+  color: hsl(158deg, 36%, 37%);
+  font-size: 3rem;
+}
+.product-card__button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem;
+  color: #fff;
+  background-color: hsl(158deg, 36%, 37%);
+  border-radius: 7px;
+}
+.product-card__button:active {
+  background-color: hsl(212deg, 21%, 14%);
+}
+.product-card__button-icon {
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=main.css.map */
