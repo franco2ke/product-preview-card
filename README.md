@@ -1,6 +1,6 @@
 # Frontend Mentor - Product Preview Card Component 👋🏾
 
-![Desktop View](design/desktop-preview.png)
+![Desktop View](design/desktop-preview.jpg)
 
 This the [Product preview card component](design/desktop-preview.png). Thanks for checking it out
 
@@ -27,14 +27,16 @@ Users are be able to:
 - View the optimal layout for the card depending on their device's screen size.
 - See an active state when they click on the 'Add to cart' button.
 
-### Screenshot
+### Screenshots
+
+#### Mobile View
 
 ![Mobile View](design/mobile-design.png)
 
 ### Links
 
-- Solution URL: [https://github.com/franco2ke/single-price-grid-component](https://github.com/franco2ke/single-price-grid-component)
-- Live Site URL: [https://franco2ke.github.io/single-price-grid-component/](https://franco2ke.github.io/single-price-grid-component/)
+- Solution URL: [https://github.com/franco2ke/product-preview-card](https://github.com/franco2ke/product-preview-card)
+- Live Site URL: [https://franco2ke.github.io/product-preview-card/](https://franco2ke.github.io/product-preview-card/)
 
 ## My process
 
