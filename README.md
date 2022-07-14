@@ -40,9 +40,15 @@ Users are be able to:
 
 ## My process
 
-I started by creating the layout container via CSS Grid. It was a little tougher than I thought centering the component without using absolute positioning. Next step was to create the desktop view afterwhich I scaled down and ensured it was looking good at all sizes between 1440px to 320px. Breakpoints used; 800px and 600px.
+I started by examining the design images and listing the key visible html elements required for the component. Once I had this list of elements, I proceeded to assign class names via the BEM methodology.
 
-Also added a small transition on the signup button to emphasize the hover state.
+My development approach was to split the parent container into two child containers, one for the image and another for the product info, both positioned via flexbox. The product info layout was also done via flex box using the 'column' flex-direction.
+
+Flexbox was the more practical choice for me because the component did not need much 2 dimensional positioning.Started with desktop view, then proceeded to mobile view. 
+
+Effort was made to space elements using the 'gap' flex-box property, minimizing usage of margins where possible, with an aim of reducing work and also increasing the maintainability and resuability of the component.
+
+The breakpoint chosen was 600px/ 37.5em. Looking good at all sizes between 1440px to 300px. 
 
 ### Built with
 
@@ -54,14 +60,6 @@ Also added a small transition on the signup button to emphasize the hover state.
 - [BEM](http://getbem.com/introduction/) - BEM methodology
 
 ### What I learned
-
-I started by examining the design images and listing the key visible html elements required for the component. Once I had this list of elements, I proceeded to assign class names via the BEM methodology.
-
-My development approach was to have two parent containers, one for the image and another for the product info, both positioned via flexbox. The product info layout was also done via flex box using the 'column' flex-direction.
-
-Effort was made to space elements using the 'gap' flex-box property, minimizing usage of margins where possible, with an aim of reducing work and also increasing the maintainability and resuability of the component.
-
-The breakpoint chosen was 600px/ 37.5em.
 
 Setting up the Art Direction; allowing the page to serve different images depending on screen width was something new for me.
 From this problem, I see the need to brush up on loading and sizing images via html or css and the pros/cons of the various approaches.
